@@ -1,0 +1,51 @@
+== Info: Could not resolve host: POST
+== Info: Closing connection 0
+== Info:   Trying 56.228.72.241:80...
+== Info: Connected to natas27.natas.labs.overthewire.org (56.228.72.241) port 80 (#1)
+== Info: Server auth using Basic with user 'natas27'
+=> Send header, 269 bytes (0x10d)
+0000: POST / HTTP/1.1
+0011: Host: natas27.natas.labs.overthewire.org
+003b: Authorization: Basic bmF0YXMyNzp1M1JSZmZYanlzamd3RlU2Yjl4YTIzaTZ
+007b: wcm1Vc1luZQ==
+008a: User-Agent: curl/7.88.1
+00a3: Accept: */*
+00b0: Cookie: idontknowyet
+00c6: Content-Length: 58
+00da: Content-Type: application/x-www-form-urlencoded
+010b: 
+=> Send data, 58 bytes (0x3a)
+0000: username=natas27&password=u3RRffXjysjgwFU6b9xa23i6prmUsYne
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 17 Sep 2025 20:00:53 GMT
+<= Recv header, 32 bytes (0x20)
+0000: Server: Apache/2.4.58 (Ubuntu)
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1027
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1027 bytes (0x403)
+0000: <html>.<head>.<!-- This stuff in the header has nothing to do wi
+0040: th the level -->.<link rel="stylesheet" type="text/css" href="ht
+0080: tp://natas.labs.overthewire.org/css/level.css">.<link rel="style
+00c0: sheet" href="http://natas.labs.overthewire.org/css/jquery-ui.css
+0100: " />.<link rel="stylesheet" href="http://natas.labs.overthewire.
+0140: org/css/wechall.css" />.<script src="http://natas.labs.overthewi
+0180: re.org/js/jquery-1.9.1.js"></script>.<script src="http://natas.l
+01c0: abs.overthewire.org/js/jquery-ui.js"></script>.<script src=http:
+0200: //natas.labs.overthewire.org/js/wechall-data.js></script><script
+0240:  src="http://natas.labs.overthewire.org/js/wechall.js"></script>
+0280: .<script>var wechallinfo = { "level": "natas27", "pass": "u3RRff
+02c0: XjysjgwFU6b9xa23i6prmUsYne" };</script></head>.<body>.<h1>natas2
+0300: 7</h1>.<div id="content">.Welcome natas27!<br>Here is your data:
+0340: <br>Array.(.    [username] =&gt; natas27.    [password] =&gt; u3
+0380: RRffXjysjgwFU6b9xa23i6prmUsYne.).<div id="viewsource"><a href="i
+03c0: ndex-source.html">View sourcecode</a></div>.</div>.</body>.</htm
+0400: l>.
+== Info: Connection #1 to host natas27.natas.labs.overthewire.org left intact
